@@ -5,3 +5,13 @@ docker run -it --rm \
   -v $PWD/ros2_ws:/ros2_ws \
   osrf/ros:humble-desktop \
   bash
+
+
+
+docker exec -it ros2_gui bash
+source /opt/ros/humble/setup.bash
+source /ros2_ws/install/setup.bash
+rqt_graph
+
+
+
